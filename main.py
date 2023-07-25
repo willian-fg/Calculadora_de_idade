@@ -1,6 +1,8 @@
 from tkinter import *
 #from tkinter import ttk
 
+from tkcalendar import Calendar, DateEntry
+
 #cores
 cor1 = "#3b3b3b"   #cinza escuro
 cor2 = '#333333'    #preto
@@ -25,5 +27,18 @@ l_calculadora.place(x=0, y=30)
 l_idade = Label(frame_cima, text='DE IDADE', width=11, height=1, relief='flat', pady=0, anchor='center',
                 font='Arial 35 bold', bg=cor2, fg=cor4)
 l_idade.place(x=0, y=70)
+
+#label frame inferior
+
+l_data_inicial = Label(frame_baixo, text='Data Inicial', width=25, height=1, padx=0, relief='flat', pady=0,
+                      anchor='nw', font='Ivy 11', bg=cor1, fg=cor3)
+l_data_inicial.place(x=50, y=30)
+
+l_data_de_nascimento = Label(frame_baixo, text='Data de Nascimento', width=25, height=1, padx=0, relief='flat', pady=0,
+                      anchor='nw', font='Ivy 11', bg=cor1, fg=cor3)
+l_data_de_nascimento.place(x=50, y=75)
+
+
+
 
 janela.mainloop()
